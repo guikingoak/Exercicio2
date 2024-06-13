@@ -25,7 +25,11 @@ public class Reserva implements Pagamento {
 
     @Override
     public double calcularPagamento() {
-        return pagamentoAVista ? 3200 * 0.9 : 3200;
+        if (pagamentoAVista) {
+            return 3200 * 0.9;
+        } else {
+            return 3200;
+        }
     }
 
     @Override

@@ -22,7 +22,7 @@ public class App {
             try {
                 opcao = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("Opção invalida , tente novamente");
+                System.out.println("Opcao invalida , tente novamente");
                 continue;
             }
 
@@ -45,7 +45,7 @@ public class App {
                 case 0:
                     return;
                 default:
-                    System.out.println("Opção invaliida.");
+                    System.out.println("Opcao invalida.");
             }
         }
     }
@@ -67,7 +67,7 @@ public class App {
             cliente = new PessoaJuridica(nome, cnpj);
         }
 
-        System.out.println("Pagamento à vista (1 para sim e 2 para não) :");
+        System.out.println("Pagamento a vista (1 para sim e 2 para não) :");
         boolean pagamentoAVista = Boolean.parseBoolean(scanner.nextLine());
 
         Reserva reserva = new Reserva(cliente, pagamentoAVista);
@@ -92,7 +92,7 @@ public class App {
             }
         }
 
-        System.out.println("A Reserva não existe.");
+        System.out.println("A Reserva nao existe.");
     }
 
     private void imprimirReservas() {
